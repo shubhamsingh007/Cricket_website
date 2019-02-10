@@ -1,0 +1,18 @@
+aside#sidebar{
+    float: right;
+    margin-left: 500px;
+    margin-top: -850px;
+}
+
+aside#sidebar1{
+    float: right;
+    margin-left: 500px;
+    margin-top: -400px;
+}
+
+aside#sidebar2{
+    float: right;
+    margin-left: 500px;
+    margin-top: -1340px;
+}
+

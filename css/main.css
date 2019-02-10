@@ -1,0 +1,409 @@
+.info{
+    
+   margin: 0 0 2px; 
+  background: url(../img/top-pattern-150.png) repeat;
+ 
+   box-shadow: 0 4px 4px -2px gold; 
+  
+    color: #fff;
+}
+
+body{
+    font-family: 'Spicy Rice', cursive;
+    background: url(../img/top-pattern-150.png) repeat
+   /* background: url(../img/galaxy9.jpg) center/cover fixed no-repeat;*/
+}
+
+.primary-color{
+    color: gold;
+}
+
+.info h2{
+    word-spacing: 0.5rem;
+}
+
+.info a{
+    transition: color 0.5s ease-in-out;
+}
+
+.info a:hover{
+    color: #fff;
+}
+
+/*#####  heaader  ######*/
+#header{
+    min-height: calc(100vh -94px);
+    background: url("../img/cricket6.png");
+    background-position: center;
+    background-size: cover;
+   /* background-attachment: fixed;  ++++++++++ make it comment +++++++++++*/
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.str1{
+    color: gold;
+    
+    transition: color .5s ease-in-out;
+}
+
+.str1:hover{
+    color: rgb(29, 25, 25);
+}
+
+.sml1{
+    color: #fff;
+    font-size: 55px;
+}
+
+.sml2{
+    color: #fff;
+    font-size: 38px;
+}
+
+.box{
+    background-color:rgba(200, 200, 200, 0.116);
+    background-color: rgba(200, 200, 200, 0.24);
+    border-radius: 0px;
+    padding: 2px;
+    margin-left: 37px;
+    width: 90%;
+    border-bottom: 6px dotted #222;
+    animation: fromRight;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.height-90{
+    min-height: calc(90vh - 94px);
+}
+
+.banner h1{
+    border-top: 6px dotted #222;
+    animation: fromLeft;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft{
+    0%{ transform: translate(-100px);
+        opacity: 0;
+    }
+    50%{  transform: translate(+30px);
+        
+
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight{
+    0%{ transform: translate(100px);
+        opacity: 0;
+    }
+    50%{  transform: translate(-30px);
+        
+
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromBottom{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/*---------navbar------------*/
+.navbar{
+    background: url("../img/city.png") repeat -10px;
+    padding: 20px 20px;
+    transition: all 1s ease;
+}
+.navbar-background{
+    padding: 5px 20px;
+}
+
+.navbar-brand{
+    font-size: 35px;
+    color: gold;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.nav-link:hover{
+    color: rgb(138, 207, 33);
+}
+
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.sushi-btn{
+
+    animation: fromLeft;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.main-btn{
+    color : gold;
+    font-size: 1.5rem;
+    border: 2px solid gold;
+    transition: all 0.5s ease-in-out;
+}
+
+.main-btn:hover{
+    color: #fff;
+    border: 2px solid #fff;
+    background: #333;
+}
+
+.nav-btn{
+    background: transparent;
+    color: gold;
+    border: 2px solid gold;
+    font-size: 23px;
+    transition: all 0.5s ease;
+}
+
+.toggler-btn{
+    border: 2px solid gold;
+    padding: 5px;
+    
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: gold;
+
+}
+
+.nav-btn:hover{
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 3%;
+    left: 48%;
+    background: #222;
+    border-radius: 10px;
+    transition: all 1s ease;
+    padding: 13px;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.header-link:hover{
+    color: #fff;
+
+}
+
+.player-gal{
+    background-color: #000;
+}
+
+/*        players gallery      */
+
+.item-container{
+    position: relative; /*for the link*/
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all 1s ease;
+
+}
+
+.item-img{
+    transition: all 1s ease;
+}
+
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 1rem;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 1s ease;
+    opacity: 0;    
+}
+
+.item-container:hover .item-link{
+    opacity: 0.6;
+}
+
+.item-link:hover{
+    color: #222;
+    border: 2px solid #222;
+    background: #fff;
+    color: #222;
+}
+
+.item-container:hover{
+    outline: 10px solid #fff;
+    outline-offset: -1.8rem;
+}
+
+#menu{
+    background:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),  url(../img/map.png)center/cover fixed no-repeat;
+}
+
+.special{
+    border: 3px solid gold;
+    position: relative;
+
+}
+
+.special-text{
+    position: absolute;
+    top: 0;
+    right:10%;
+    background: gold;
+    padding: 0 0.4rem;
+}
+
+.item-white{
+    color: #ffffff;
+}
+
+.text-msg{
+    color: greenyellow;
+    
+}
+
+.facts{
+    color: rgb(92, 43, 226);
+}
+
+.text-orange{
+    color: orangered;
+}
+
+/*-------revier img ------*/
+
+.review-item{
+    background: rgba(255, 255, 255, 0.5);
+    clip-path: polygon(10% 0,90% 0%,90% 100%,10% 100%);
+}
+
+.review-pic{
+    background-image: url('../img/virat4.png');
+    background-position: center;
+    background-size: cover;
+   background-attachment: fixed; 
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.review-img{
+    width: 180px;
+    height: 200px;
+    margin-left: 58%;
+    
+}
+
+.text-pp{
+    margin-right: 10%;
+}
+
+/*contact*/
+.height-60{
+    min-height: 64vh;
+}
+
+#contact .card{
+background: rgba(0, 0, 0, 0.5);
+transition: all 1s ease;
+}
+
+#contact .card:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header{
+    color: gold;
+}
+
+#contact .input-group-text{
+    background: gold;
+    border-color: orangered;
+    color: rgb(0, 0, 0);
+}
+
+.contact-btn{
+    color: gold;
+    border-color: gold;
+    background: transparent;
+    transition: all 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer{
+    background: black;
+
+}
+
+.footer-icon{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: gold;
+    text-decoration: none;
+}
+
+.footer-icon:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+
